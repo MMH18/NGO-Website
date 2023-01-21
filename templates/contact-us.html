@@ -1,0 +1,183 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang=en>
+
+<head>
+    <!-- CSS only -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <!-- CSS only -->
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{% static 'css/style-c.css'%}">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    
+
+<style>
+*{
+    margin: 0;
+    padding: 0;
+}
+.all{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+</style>
+    </head>
+
+<body>
+    
+        <section class="header">
+            <nav>
+                <a href="{% url 'home_page'%}"><img src="{% static 'images/logo.png' %}" alt="AAESSO Logo" width="110" height="80"></a>
+                <div class="bars" id="bar">
+                    <i class="fa fa-times" onclick="hidemenu()"></i>
+                    <ul data-aos="fade-right">
+                        <li> <a href=" {% url 'home_page'%} ">HOME</a> </li>
+                        <li> <a href=" {% url 'project'%} ">PROJECTS</a> </li>
+                        <li> <a href=" {% url 'who_we_are'%} ">WHO WE ARE</a> </li>
+                        <li> <a href=" {% url 'contact_us'%}">CONTACT US</a> </li>
+                        <li> <a href=" {% url 'our_team'%} ">OUR TEAM</a> </li>
+                    </ul>
+    
+                </div>
+                <i class="fa fa-bars" onclick="showmenu()"></i>
+            </nav>
+            <div class="text-box">
+                <h1 data-aos="fade-left" data-aos-delay="400">YOUR TRUST OUR ACTION</h1>
+                <p data-aos="fade-right" data-aos-delay="400">“If you can’t feed a hundred people, feed just one.”
+                — Mother Teresa
+                </p>
+                <hr>
+                <a href=" {% url 'who_we_are'%} " class="hero-btn">Visit Us here for more</a>
+                <hr>
+            </div>
+    
+        </section>
+<section class="contact-us2">
+    <h1>Contact Us</h1>
+    <div class="contact-us1">
+        <img src="{% static 'images/contact-us.png' %}" alt="customer service">
+        <div class="icons-c">
+            <img class="img-c" src="{% static 'images/phone.png' %}" alt="phone">+93(0)782818242</img>
+            <img class="img-c" src="{% static 'images/message.png' %}" alt="message" >info@aaesso.org</img>
+            <img class="img-c" src="{% static 'images/location.png' %}" alt="location">15th Street, Wazir Akbar
+            Khan,Kabul,Afghanistan</img>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="text-c">  
+         <H2>DO NOT HESITATE TO CONTACT US</H2>   
+    </div>
+    <div class="all">
+        {% csrf_token %}
+        <form class="row g-3" action="{% url 'contact_us'%}" method="post">
+            {% csrf_token %}
+            <div class="row g-3">
+                <div class="col">
+                    <label for="exampleFormControlInput1" class="form-label">First Name</label>
+                    <input type="text" required class="form-control"  aria-label="First name" name="firstname">
+                </div>
+                <div class="col">
+                    <label for="exampleFormControlInput1" class="form-label">Last Name</label>
+                    <input type="text" required class="form-control"  aria-label="Last name" name="lastname">
+                </div>
+            </div>                                  
+            <div class="col-md-6">
+                <label for="inputEmail4" class="form-label">Email</label>
+                <input type="email" required class="form-control" id="inputEmail4" name="email">
+            </div>
+            <div class="col-12">
+                <label for="inputAddress" class="form-label">Address</label>
+                <input type="text" required class="form-control" id="inputAddress" placeholder="1234 Main St" name="address1">
+            </div>
+            <div class="col-12">
+                <label for="inputAddress2" class="form-label">Address 2</label>
+                <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor" name="address2">
+            </div>
+            <div class="col-md-6">
+                <label for="inputCity" class="form-label">City</label>
+                <input type="text" class="form-control" id="inputCity" name="city">
+            </div>
+            <div class="col-md-2">
+                <label for="inputZip" class="form-label">Zip</label>
+                <input type="text" class="form-control" id="inputZip" name="zip">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="desc"></textarea>
+            </div>
+            <div class="col-12">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck" name="is_true">
+                    <label class="form-check-label" for="gridCheck" >
+                        Check this,if all Infrormation is True
+                    </label>
+                </div>
+            </div>
+            <div class="col-12">
+                <button type="submit" class="btn btn-secondary" style="background-color:#1acbd8 ;">Send</button>
+            </div>
+        </form>
+        
+</section>  
+
+        <!-- JavaScript Bundle with Popper -->
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+            crossorigin="anonymous"></script>
+    </div>
+
+<!---footer-->
+
+    <section class="color-f">
+        <section class="footer">
+            <h4>Contact Us</h4>
+            <p>Please do not hesitate to contact us; we would be happy to speak with you about improving human well being.
+            </p>
+            <div class="footer-social">
+                <ul>
+                    <li><a href=" {% url 'home_page'%} "><i class="fa fa-facebook fa-3x"></i></a></li>
+                    <li><a href=" {% url 'home_page'%} "><i class="fa fa-twitter fa-3x"></i></a></li>
+                    <li><a href=" {% url 'home_page'%} "><i class="fa fa-linkedin fa-3x"></i></a></li>
+                    <li><a href=" {% url 'home_page'%} "><i class="fa fa-dribbble fa-3x"></i></a></li>
+                    <li><a href=" {% url 'home_page'%} "><i class="fa fa-instagram fa-3x"></i></a></li>
+                    <li><a href=" {% url 'home_page'%}"><i class="fa fa-youtube fa-3x"></i></a></li>
+                </ul>
+            </div>
+            <!-- <div class="icons">
+                        <i class="fa fa-facebook fa-3x"></i>
+                        <i class="fa fa-twitter"></i>
+                        <i class="fa fa-instagram"></i>
+                        <i class="fa fa-linkedin"></i>
+                    </div> -->
+            <p id="creator">© Design and Developed By MMH</p>
+
+        </section>
+
+    </section>
+    <!-----JavaScript-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script>
+        var bar = document.getElementById("bar")
+        function showmenu() {
+            bar.style.right = "0";
+        }
+        function hidemenu() {
+            bar.style.right = "-200px";
+        }
+    </script>
+    </body>
+
+</html>

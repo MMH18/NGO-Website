@@ -1,0 +1,223 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale= 1.0">
+    <title>Home Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+</head>
+<body>
+
+            <section class="header">
+                <nav>
+                    <a href="{% url 'home_page'%}"><img src="{% static 'images/logo.png' %}" alt="AAESSO Logo" width="110"
+                            height="80"></a>
+                    <div class="bars" id="bar" >
+                        <i class="fa fa-times" onclick="hidemenu()"></i>
+                        <ul data-aos="fade-right">
+                            <li > <a href=" {% url 'home_page'%} ">HOME</a> </li>
+                            <li> <a href=" {% url 'project'%} ">PROJECTS</a> </li>
+                            <li> <a href=" {% url 'who_we_are'%} ">WHO WE ARE</a> </li>
+                            <li> <a href=" {% url 'contact_us'%}">CONTACT US</a> </li>
+                            <li> <a href=" {% url 'our_team'%} ">OUR TEAM</a> </li>
+                        </ul>
+            
+                    </div>
+                    <i class="fa fa-bars" onclick="showmenu()"></i>
+                </nav>
+                <div class="text-box">
+                    <h1 data-aos="fade-left" data-aos-delay="400">YOUR TRUST OUR ACTION</h1>
+                    <p data-aos="fade-right" data-aos-delay="400">"In this World, if any standing person take a fallen hand, there will be one more fallen on the ground."— M Haroon Noorzai
+                    </p>
+                    <hr>
+                    <a href=" {% url 'who_we_are'%} " class="hero-btn" >Visit Us here for more</a>
+                    <hr>
+                </div>
+
+            </section>
+    <!---- Projects -->
+    <section class="color-p">
+        <section class="project" >
+            <h1 class="header-p" >OUR HIGHLIGHTS</h1>
+            <p class="project-p-color"> Along with Our Partners, We Put a Lot of Effort into Implementing  NGO's Highlights . </p>
+        
+            <div class="row-p">
+                <div class="project-col">
+                    <h3>Invest for a Healthy community in this World</h3>
+                    <p> Building a fairer, healthier world start is a must. </p>
+                </div>
+                <div class="project-col">
+                    <h3>Lead our Community to Help Others</h3>
+                    <p> Community Leadership is all about the welfare of the people.</p>
+                </div>
+                <div class="project-col">
+                    <h3>Put Businesses to Work for Humanity</h3>
+                    <p> For the most successful business leaders focus on humanity first.</p>
+                </div>
+            </div>
+        
+        
+        </section>
+    </section>
+    <!-----Who we are---->
+    <section class="color-wwa">
+        <section class="whoweare">
+            <h1>OUR VIEWS</h1>
+            <p>We Always Carry Out Our Projects in The Best Possible Manner.</p>
+            <div class="row">
+                <div class="whoweare-col">
+                    <img style = "object-fit: cover;"src="{% static 'images/social.jpg' %}"alt="social" width="500" height="400">
+                    <div class="layer">
+                        <h3>Social services</h3>
+                    </div>
+                </div>
+                <div class="whoweare-col">
+                    <img src="{% static 'images/education.jpg' %}" alt="training" width="500" height="400">
+                    <div class="layer">
+                        <h3>Training</h3>
+                    </div>
+                </div>
+                <div class="whoweare-col">
+                    <img style = "object-fit: cover;" src="{% static 'images/health.jpg' %}" alt="health" width="500" height="400">
+                    <div class="layer">
+                        <h3>Health</h3>
+                    </div>
+                </div>
+        </section>
+
+    </section>
+    <!----Collaboration----
+    <section class="color-c">
+        <section>
+            <div class="collaboration">
+                <h1>COLLABORATION WITH</h1>
+                <p>Hey how are you feeling well i hope you are okie dnclkxnmnknclklknklxnckndsklnclk</p>
+                <div class="row">
+                    <div class="collaboration-col">
+                        <img src="images/unicef1.png">
+                        <h3>UNICEF</h3>
+                        <p>this is samplethis is sample</p>
+                    </div>
+                    <div class="collaboration-col">
+                        <img src="images/undp1.png">
+                        <h3>UNDP</h3>
+                        <p>this is samplethis is sample</p>
+                    </div>
+        
+                    <div class="collaboration-col">
+                        <img src="images/unhcr1.png">
+                        <h3>UNHCR</h3>
+                        <p>this is samplethis is sample</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    --->
+
+<!-- card section -->
+<section class="cards">
+    <h1 class="title-t" style="text-align: center;">OUR SUPERIORS</h1>
+    <div class="flex">
+    <div  class="card">
+        <img src="{% static 'images/hashmat.jpg' %}" alt="person img " >
+        <h1>Hashmatullah Helali</h1>
+        <h2>PRESIDENT</h2>
+        <div class="card-header">
+        </div>
+        <div class="card-body">
+            <p>"It is a pleasure to represent this outstanding organization, Aid in Action Economic and Social Assistance Services
+            Organization (AAESSO). We have served the Afghan community for the past several years. We plan to continue providing
+            quality resources to the Afghanistan People Aid in Action Economic and Social Assistance Services Organization, is truly thankful...."
+            </p>
+            <a href="{% url 'our_team'%}"><h4>View More</h4></a>
+        
+        </div>
+    </div><div  class="card">
+        <img src="{% static 'images/nazifa.jpeg' %}" alt="person img" >
+        <h1>Nazifa Azimi</h1>
+        <h2>CO PRESIDENT</h2>
+        <div class="card-header">
+        </div>
+        <div class="card-body">
+            <p>"This organization was established to assist the underprivileged in obtaining a fundamental education and access to
+            healthcare in order to live a healthy life in the future. We are appreciative of the generous assistance we receive from
+            many people, and we appreciate them for their commitment to our cause. Our Society strives to make a bigger impact in
+            our field and is committed to its work.
+            Our work ...."</p>
+            <a href="{% url 'our_team'%}">
+                <h4>View More</h4>
+            </a>
+
+        </div>
+    </div><div  class="card">
+        <img src="{% static 'images/haroon.jpg' %}" alt="person img">
+        <h1>M.Haroon Noorzai</h1>
+        <h2>CEO</h2>
+
+        <div class="card-body">
+            <p>"I'm pleased to introduce the Afghan non-profit organization "Aid in Action Economic and Social Services Organization
+            (AAESSO)". I extend a warm greeting on behalf of AAESSO.
+            With such aims and objectives, it was founded with a strong message for the many purposes, to contribute to the
+            development of Afghanistan and the advancement of our nation......"</p>
+            <a href="{% url 'our_team'%}">
+                <h4>View More</h4>
+            </a>
+        </div>
+    </div>
+    </div>
+</section>
+<!-- end card section -->
+
+
+        <!---footer-->
+
+        <section class="color-f">
+            <section class="footer">
+                <h4>Contact Us</h4>
+                <p>Please do not hesitate to contact us; we would be happy to speak with you about improving human well being.
+                </p>
+                <div class="footer-social">
+                    <ul>
+                        <li><a href="#"><i class="fa fa-facebook fa-3x"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter fa-3x"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin fa-3x"></i></a></li>
+                        <li><a href="#"><i class="fa fa-dribbble fa-3x"></i></a></li>
+                        <li><a href="#"><i class="fa fa-instagram fa-3x"></i></a></li>
+                        <li><a href="https://www.youtube.com/"><i class="fa fa-youtube fa-3x"></i></a></li>
+                    </ul>
+                </div>
+                <!-- <div class="icons">
+                    <i class="fa fa-facebook fa-3x"></i>
+                    <i class="fa fa-twitter"></i>
+                    <i class="fa fa-instagram"></i>
+                    <i class="fa fa-linkedin"></i>
+                </div> -->
+                <p id="creator">© Design and Developed By MMH</p>
+        
+            </section>
+        
+        </section>
+    <!-----JavaScript-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script >
+        var bar = document.getElementById("bar")
+        function showmenu(){
+            bar.style.right = "0";
+        }
+        function hidemenu(){
+            bar.style.right = "-200px";
+        }
+
+    </script>
+</body>
+</html>

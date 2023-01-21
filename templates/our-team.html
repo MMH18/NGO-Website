@@ -1,0 +1,317 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang = 'en-US'>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale= 1.0">
+    <title>Our Team</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{% static 'css/style-o.css'%}">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+</head>
+<body>
+<!----header-->
+        <section class="header">
+            <nav>
+                <a href="{% url 'home_page'%}"><img src="{% static 'images/logo.png' %}" alt="AAESSO Logo" width="110"
+                        height="80"></a>
+                <div class="bars" id="bar">
+                    <i class="fa fa-times" onclick="hidemenu()"></i>
+                    <ul data-aos="fade-right">
+                        <li> <a href=" {% url 'home_page'%} ">HOME</a> </li>
+                        <li> <a href=" {% url 'project'%} ">PROJECTS</a> </li>
+                        <li> <a href=" {% url 'who_we_are'%} ">WHO WE ARE</a> </li>
+                        <li> <a href=" {% url 'contact_us'%}">CONTACT US</a> </li>
+                        <li> <a href=" {% url 'our_team'%} ">OUR TEAM</a> </li>
+                    </ul>
+        
+                </div>
+                <i class="fa fa-bars" onclick="showmenu()"></i>
+            </nav>
+            <div class="text-box">
+                <h1 data-aos="fade-left" data-aos-delay="400">YOUR TRUST OUR ACTION</h1>
+                <p data-aos="fade-right" data-aos-delay="400">“Every action, no matter how small, is like drips on a rock—over time, they can carve a canyon through even the
+                thickest, most immovable layer of rock.”
+                — Shannon Watts
+                </p>
+                <hr>
+                <a href=" {% url 'who_we_are'%} " class="hero-btn">Visit Us here for more</a>
+                <hr>
+            </div>
+        
+        </section>
+    <!----our messages--
+<section class="color-messages">
+        <---first-part-our-message--
+        <section>
+            <div class="our-messages">
+                <h1>OUR MESSAGES</h1>
+                <p>Hey how are you feeling well i hope you are okie dnclkxnmnknclklknklxnckndsklnclk</p>
+                <div class="row">
+                    <div class="our-messages-col">
+                        <img src="images/hashmat.jpg" width="300" height="300">
+                    </div>
+                    <div class="our-messages-p">
+                        <h2>Hashmatullah Helali</h2>
+                        <h3>--- CEO & FOUNDER ---</h3>
+                        <p>Hey how are you feeling well i hope you are okie dnclkxnmnknclklknklxnckndsklnclk this is
+                            samplethis
+                            is samplethis is samplethis
+                            is samplethis is samplethis is samplethis is samplethis is samplethis is samplethis
+                            is samplethis is samplethis is samplethis is samplethis is samplethis is samplethis
+                            is samplethis is samplethis is samplethis is samplethis is samplethis is samplethis
+                            is samplethis is samplethis is samplethis is samplethis is samplethis is samplethis
+                            is samplethis is samplethis is samplethis is samplethis is samplethis is samplethis
+                            is samplethis is samplethis is samplethis is samplethis is samplethis is samplethis
+                            is samplethis is samplethis is sample</p>
+    
+                    </div>
+                </div>
+            </div>
+        </section>                
+
+
+<---second-part-our-message--
+        <section>
+            <div class="our-messages">
+                <div class="row">
+                    <div class="our-messages-col">
+                        <img src="images/haroon.jpg" width="300" height="300">
+                    </div>
+                    <div class="our-messages-p">
+                        <h2>M.Haroon Noorzai</h2>
+                        <h3>--- CO FOUNDER ---</h3>
+                        <p>Hey how are you feeling well i hope you are okie dnclkxnmnknclklknklxnckndsklnclkthis is samplethis
+                            is samplethis is samplethis
+                            is samplethis is samplethis is samplethis is samplethis is samplethis is samplethis
+                            is samplethis is samplethis is samplethis is samplethis is samplethis is samplethis
+                            is samplethis is samplethis is samplethis is samplethis is samplethis is samplethis
+                            is samplethis is samplethis is samplethis is samplethis is samplethis is samplethis
+                            is samplethis is samplethis is sample</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+        <---third-part-our-message--
+        <section>
+            <div class="our-messages">
+                <div class="row">
+                    <div class="our-messages-col">
+                        <img src="images/nazifa.jpg" width="300" height="300">
+                    </div>
+                    <div class="our-messages-p">
+                        <h2>Nazifa Azimi</h2>
+                        <h3>--- CO PRESIDENT ---</h3>
+                        <p>Hey how are you feeling well i hope you are okie dnclkxnmnknclklknklxnckndsklnclkthis is samplethis
+                            is samplethis is samplethis
+                            is samplethis is samplethis is samplethis is samplethis is samplethis is samplethis
+                            is samplethis is samplethis is samplethis is samplethis is samplethis is samplethis
+                            is samplethis is samplethis is samplethis is samplethis is samplethis is samplethis
+                            is samplethis is samplethis is samplethis is samplethis is samplethis is samplethis
+                            is samplethis is samplethis is sample</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+</section>
+-->
+<header class="block__header">
+    <h2>Our Superiors</h2>
+    <p>
+        Messages from our Hardworking Superiors 
+    </p>
+</header>
+<div class="container">
+    <div class="card testimonial">
+        <div class="grid grid--1x2">
+            <div class="testimonial__image">
+                <img class = "img-o" src="{% static 'images/hashmat.jpg' %}" alt="person img" width="375"  />
+                <span class="icon-container icon-container--accent">
+                    <svg class="icon icon--white icon--small">
+                        <use href="images/sprite.svg#quotes"></use>
+                    </svg>
+                </span>
+            </div>
+            <blockquote class="quote">
+                <h3 class="media__title quote__author" >Hashmatullah Helali</h3>
+                <p class="quote__text">
+                    It is a pleasure to represent this outstanding organization, Aid in Action Economic and Social Assistance Services
+                    Organization (AAESSO). We have served the Afghan community for the past several years. We plan to continue providing
+                    quality resources to the Afghanistan People
+                    Aid in Action Economic and Social Assistance Services Organization, is truly thankful to those members of AAESSO, who
+                    had the vision since several years for this Foundation. Through the perseverance of those with the passion for this
+                    charitable endeavor, today, 2022, we can say the vision is still a reality. AAESSO is dedicated to enhancing the quality
+                    of life of the residents throughout Afghanistan. Through its yearly “Debutante, signature fundraiser, programs and other
+                    fundraising opportunities, AAESSO, is able to assist and partner in charitable, artistic, educational, economic
+                    development activities with various community organizations.
+                </p>
+                <footer>
+                    <div class="media">
+                        <div class="media__image">
+                            <svg class="icon icon--primary quote__line">
+                                <use href="images/sprite.svg#line"></use>
+                            </svg>
+                        </div>
+                        <div class="media__body">
+                            <p class="quote__organization_p">PRESIDENT of Organization</p>
+                        </div>
+                    </div>
+                </footer>
+            </blockquote>
+        </div>
+    </div>
+</div>
+
+
+<div class="container">
+    <div class="card testimonial">
+        <div class="grid grid--1x2">
+            <div class="testimonial__image">
+                <img class="img-o1" src="{% static 'images/haroon.jpg' %}" alt="person img" width="375" />
+                <!-- width="475" height="450" -->
+                <span class="icon-container icon-container--accent">
+                    <svg class="icon icon--white icon--small">
+                        <use href="images/sprite.svg#quotes"></use>
+                    </svg>
+                </span>
+            </div>
+
+            
+
+            <blockquote class="quote">
+                <h3 class="media__title1 quote__author">M.Haroon Noorzai</h3>
+                <p class="quote__text1">
+                    I'm pleased to introduce the Afghan non-profit organization "Aid in Action Economic and Social Services Organization
+                    (AAESSO)". I extend a warm greeting on behalf of AAESSO.
+                    With such aims and objectives, it was founded with a strong message for the many purposes, to contribute to the
+                    development of Afghanistan and the advancement of our nation in numerous sectors.
+                    AAESSO was founded with the goal of advancing underprivileged children, women, elderly people, charitable individuals,
+                    etc. in the fields of education, health, sustainable development, etc.
+                    Some of the fundamental rights that every person in the globe should have access to, irrespective of their social class,
+                    are the right to education and the right to health. The AAESSO does everything possible to give every person who has
+                    been denied these right the opportunity to exercise them. At the same time, we want to provide individuals the skills
+                    they need to access all of life's basics, so that they can gain respect and dignity for themselves and the generations
+                    to come.
+                    We are incredibly appreciative of the help we receive from numerous individuals who enable us to carry out our work.
+                    If you are a youth, feel free to visit us and participate in our events at any time. We always appreciate any kind of
+                    assistance that is given.
+
+                </p>
+                <footer>
+                    <div class="media">
+                        <div class="media__image">
+                            <svg class="icon icon--primary quote__line">
+                                <use href="images/sprite.svg#line"></use>
+                            </svg>
+                        </div>
+                        <div class="media__body">
+                            <p class="quote__organization_ceo">CEO of Organization</p>
+                        </div>
+                    </div>
+                </footer>
+            </blockquote>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="card testimonial">
+        <div class="grid grid--1x2">
+            <div class="testimonial__image">
+                <img class = "img-o2"src="{% static 'images/nazifa.jpeg' %}" alt="person img" width="375 />
+                <!-- width="475" height="400" -->
+                <span class="icon-container icon-container--accent">
+                    <svg class="icon icon--white icon--small">
+                        <use href="images/sprite.svg#quotes"></use>
+                    </svg>
+                </span>
+            
+            </div>
+            <blockquote class="quote">
+                <h3 class="media__title2 quote__author">Nazifa Azimi</h3>
+                <p class="quote__text2">
+                This organization was established to assist the underprivileged in obtaining a fundamental education and access to
+                healthcare in order to live a healthy life in the future. We are appreciative of the generous assistance we receive from
+                many people, and we appreciate them for their commitment to our cause. Our Society strives to make a bigger impact in
+                our field and is committed to its work.
+                Our work doesn't merely concentrate on people of a certain age. Along with the elderly, we offer assistance to children,
+                young people, and women in need. We do this to help these people's growth and wellbeing so that they can both
+                individually and collectively realize their full potential.
+                I firmly think that in order to maintain everyone's wellbeing, we must empower families and communities to become
+                self-sufficient. The next generation, whether wealthy or not, has the ability to improve this world.
+                Our team puts a lot of effort into figuring out how to level the playing field for kids and teenagers with intellectual
+                and developmental disabilities so that they may also contribute significantly to the growth of Afghanistan in the
+                future.
+                We constantly appreciate the assistance given by many sources that share our conviction about the need for change. I
+                sincerely appreciate your assistance in sharing the word of hope.</p>
+                <footer>
+                    <div class="media">
+                        <div class="media__image">
+                            <svg class="icon icon--primary quote__line">
+                                <use href="images/sprite.svg#line"></use>
+                            </svg>
+                        </div>
+                        <div class="media__body">
+                            
+                            <p class="quote__organization_n">CO-PRESIDENT of Organization</p>
+                        </div>
+                    </div>
+                </footer>
+            </blockquote>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+<!---footer-->
+<section class="color-f">
+    <section class="footer">
+        <h4>Contact Us</h4>
+        <p>Please do not hesitate to contact us; we would be happy to speak with you about improving human well being.
+        </p>
+        <div class="footer-social">
+            <ul>
+                <li><a href="#"><i class="fa fa-facebook fa-3x"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter fa-3x"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin fa-3x"></i></a></li>
+                <li><a href="#"><i class="fa fa-dribbble fa-3x"></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram fa-3x"></i></a></li>
+                <li><a href="https://www.youtube.com/"><i class="fa fa-youtube fa-3x"></i></a></li>
+            </ul>
+        </div>
+        <!-- <div class="icons">
+                    <i class="fa fa-facebook fa-3x"></i>
+                    <i class="fa fa-twitter"></i>
+                    <i class="fa fa-instagram"></i>
+                    <i class="fa fa-linkedin"></i>
+                </div> -->
+        <p id="creator">© Design and Developed By MMH</p>
+
+    </section>
+
+</section>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+
+
+</html>

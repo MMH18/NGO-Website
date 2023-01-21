@@ -1,0 +1,166 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale= 1.0">
+    <title>Who We Are</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{% static 'css/style-w.css'%}">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
+</head>
+
+<body>
+
+        <section class="header">
+            <nav>
+                <a href="{% url 'home_page'%}"><img src="{% static 'images/logo.png' %}" alt="AAESSO Logo" width="110"
+                        height="80"></a>
+                <div class="bars" id="bar">
+                    <i class="fa fa-times" onclick="hidemenu()"></i>
+                    <ul data-aos="fade-right">
+                        <li> <a href=" {% url 'home_page'%} ">HOME</a> </li>
+                        <li> <a href=" {% url 'project'%} ">PROJECTS</a> </li>
+                        <li> <a href=" {% url 'who_we_are'%} ">WHO WE ARE</a> </li>
+                        <li> <a href=" {% url 'contact_us'%}">CONTACT US</a> </li>
+                        <li> <a href=" {% url 'our_team'%} ">OUR TEAM</a> </li>
+                    </ul>
+        
+                </div>
+                <i class="fa fa-bars" onclick="showmenu()"></i>
+            </nav>
+            <div class="text-box">
+                <h1 data-aos="fade-left" data-aos-delay="400">YOUR TRUST OUR ACTION</h1>
+                <p data-aos="fade-right" data-aos-delay="400">“Do your little bit of good where you are; it is those little bits of good put together that overwhelm the world.” — Archbishop Desmond Tutu
+                </p>
+                <hr>
+                <a href=" {% url 'who_we_are'%} " class="hero-btn">Visit Us here for more</a>
+                <hr>
+            </div>
+        
+        </section>
+    <section class="wwa-p">
+        <h1>About Us</h1>
+        <h2>Introduction:</h2>
+        <!-- <div class="intro">
+            <p class="intro-p" >Aid in Action Economic and Social Assistance Services Organization (AAESSO) considering the goals and policies of the
+            adoption, It works in the field of women's empowerment and self-sufficiency, and it is needed in the implementation of
+            projects Practical steps should be taken to empower women at the central and provincial levels.
+            Our NGO has always tried to improve the living conditions of women in various fields and plans for useful projects in
+            order to achieve its desired goals consolidate the stability of the rule of law and the growth of the economy and the
+            empowerment of women throughout Afghanistan, so that many women in the country could use the opportunities to develop
+            their skills and family's economy, And on one hand we witness the financial independence of women and on the other hand
+            we witness reduction of poverty, family violence and active participation of women in economic growth in a family</p>
+                <div>
+            <img class = "intro-i" href="https://storyset.com/web" src="images/introduction.png" width="500" height="450">
+
+                </div>
+        </div> -->
+
+        <div class="flex-box">
+            <div>
+                <p>Aid in Action Economic and Social Assistance Services Organization (AAESSO) considering the goals and policies of the
+                adoption, It works in the field of women's empowerment and self-sufficiency, and it is needed in the implementation of
+                projects Practical steps should be taken to empower women at the central and provincial levels.
+                Our NGO has always tried to improve the living conditions of women in various fields and plans for useful projects in
+                order to achieve its desired goals consolidate the stability of the rule of law and the growth of the economy and the
+                empowerment of women throughout Afghanistan, so that many women in the country could use the opportunities to develop
+                their skills and family's economy, And on one hand we witness the financial independence of women and on the other hand
+                we witness reduction of poverty, family violence and active participation of women in economic growth in a family</p>
+            </div>
+            <div>
+                <img src="{% static 'images/introduction.png' %}" alt="animation">
+            </div>
+        </div>
+
+
+        <!-- <a href="https://storyset.com/people">target</a> -->
+    </section>
+    <section class="block block--dark block--skewed-right block-showcase">
+    <div class="container grid grid--1x2">
+        <picture data-aos="fade-right" class="block-showcase__image">
+            <!-- <source type="image/webp" srcset="images/comingsoon2.png, " /> -->
+            <img class="block-i"  src="{% static 'images/target.png' %}" alt="team work" style="float:left;"width="350" height="350">
+            <source type="image/png" srcset="images/ipad.png 1x, images/ipad@2x.png 2x" />
+            <img src="images/comingsoon2.png" alt="" />
+        </picture> 
+        <div class="v-p">
+            <h2>Vision:</h2>
+            <div class="intro1">
+                <ul>
+                    <li>Supporting the work and activities of women in order to promote and develop the economy that will lead
+                        to their
+                        self-sufficiency;</li>
+                    <li> Participation of women in work and job creation and encouragement to professional activities that cause
+                        the economic
+                        development of families;</li>
+                    <li> Participation of women in the workforce, the creation of jobs, and encouragement of professions that
+                        contribute to the
+                        economic growth of families;</li>
+                    <li> Exchange of experiences and transfer of professional teachings between women to the regional and
+                        community level;</li>
+                    <li> Reduction in violence as a result of women's economic prosperity and their increased employment
+                        opportunities;</li>
+                    <li> Raising the graph of women's inclusion in economic and professional education;</li>
+                </ul>
+        
+            </div>
+        </div>
+    </div>
+    
+    </section>
+     
+        
+            <!---footer-->
+            
+<section class="color-f">
+    <section class="footer">
+                    <h4>Contact Us</h4>
+                    <p>Please do not hesitate to contact us; we would be happy to speak with you about improving human well being.
+                    <div class="footer-social">
+                        <ul>
+                            <li><a href="#"><i class="fa fa-facebook fa-3x"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter fa-3x"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin fa-3x"></i></a></li>
+                            <li><a href="#"><i class="fa fa-dribbble fa-3x"></i></a></li>
+                            <li><a href="#"><i class="fa fa-instagram fa-3x"></i></a></li>
+                            <li><a href="https://www.youtube.com/"><i class="fa fa-youtube fa-3x"></i></a></li>
+                        </ul>
+                    </div>
+                    <!-- <div class="icons">
+                                <i class="fa fa-facebook fa-3x"></i>
+                                <i class="fa fa-twitter"></i>
+                                <i class="fa fa-instagram"></i>
+                                <i class="fa fa-linkedin"></i>
+                            </div> -->
+                    <p id="creator">© Design and Developed By MMH</p>
+            
+                
+            
+    </section>
+</section>
+            <!-----JavaScript-->
+           <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+          <script>
+                var bar = document.getElementById("bar")
+                function showmenu() {
+                    bar.style.right = "0";
+                }
+                function hidemenu() {
+                    bar.style.right = "-200px";
+                }
+            </script>
+
+
+
+
+</body>
+</html>

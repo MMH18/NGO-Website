@@ -1,0 +1,193 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale= 1.0">
+    <title>Projects</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{% static 'css/style-p.css'%}">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+</head>
+
+<body>
+
+        <section class="header">
+            <nav>
+                <a href="{% url 'home_page'%}"><img src="{% static 'images/logo.png' %}" alt="AAESSO Logo" width="110"
+                        height="80"></a>
+                <div class="bars" id="bar">
+                    <i class="fa fa-times" onclick="hidemenu()"></i>
+                    <ul data-aos="fade-right">
+                        <li> <a href=" {% url 'home_page'%} ">HOME</a> </li>
+                        <li> <a href=" {% url 'project'%} ">PROJECTS</a> </li>
+                        <li> <a href=" {% url 'who_we_are'%} ">WHO WE ARE</a> </li>
+                        <li> <a href=" {% url 'contact_us'%}">CONTACT US</a> </li>
+                        <li> <a href=" {% url 'our_team'%} ">OUR TEAM</a> </li>
+                    </ul>
+        
+                </div>
+                <i class="fa fa-bars" onclick="showmenu()"></i>
+            </nav>
+            <div class="text-box">
+                <h1 data-aos="fade-left" data-aos-delay="400">YOUR TRUST OUR ACTION</h1>
+                <p data-aos="fade-right" data-aos-delay="400">“Optimism doesn’t mean that you are blind to the reality of the situation. It means that you remain motivated to seek a
+                solution to whatever problems arise.”
+                — The Dalai Lama
+                </p>
+                <hr>
+                <a href=" {% url 'who_we_are'%} " class="hero-btn">Visit Us here for more</a>
+                <hr>
+            </div>
+        
+        </section>
+    <section class="block block--dark block--skewed-right block-showcase">
+        <header class="block__header">
+            <h1>Our Views</h1>
+        </header>
+        <div class="container grid grid--1x2">
+            <picture data-aos="fade-right" class="block-showcase__image">
+                <!-- <source type="image/webp" srcset="images/comingsoon2.png, " /> -->
+                <img class = "img-p" src="{% static 'images/project.png' %}" alt="team work" width="600" height="550">
+                <!-- <source type="image/png" srcset="images/ipad.png 1x, images/ipad@2x.png 2x" />
+                <img src="images/comingsoon2.png" alt="" /> -->
+            </picture>
+            <ul class="list" data-aos="fade-up">
+                <li>
+                    <div class="media">
+                        <div class="media__image">
+                            <svg class="icon icon--primary">
+                                <use href="images/comingsoon2.png"></use>
+                            </svg>
+                        </div>
+                        <div class="media__body">
+                            <h3 class="media__title">Social services</h3>
+                            <p>
+                                Economic growth (creating jobs, eliminating unemployment, increasing family income, investment...);<br>
+                                Providing support for (naturally and unnaturally injured, displaced, disabled and disabled)...;
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="media">
+                        <div class="media__image">
+                            <svg class="icon icon--primary">
+                                <use href="images/comingsoon2.png"></use>
+                            </svg>
+                        </div>
+                        <div class="media__body">
+                            <h3 class="media__title">Training</h3>
+                            <p>
+                                Providing suitable fields for education (literacy, online courses in unsafe and unsanitary conditions, obtaining
+                                domestic and foreign scholarships)...;<br>
+                                Organising educational programs (seminars, workshops, courses)...;
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="media">
+                        <div class="media__image">
+                            <svg class="icon icon--primary">
+                                <use href="images/comingsoon2.png"></use>
+                            </svg>
+                        </div>
+                        <div class="media__body">
+                            <h3 class="media__title">Health</h3>
+                            <p>
+                                Efforts for health services in busy and densely populated areas in order to address the health status of the people with
+                                the help and cooperation of government institutions, national capitalists and charitable institutions;<br>
+                                Establishing awareness programs (environmental health care, vital health care)...;
+                            </p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="portfolio">
+        <div class="p-text">
+            <h1>Portfolio</h1>
+            <h4>Women's Project(Sewing Workshop)</h4>
+        </div>
+       <div class="tailor-row">
+            <div class="tailor">
+                <img src="{% static 'images/tailorproject.jpeg' %}" alt="women"  width="300" height="200">
+            </div>
+            <div class="tailor">
+                <img src="{% static 'images/tailorproject1.jpeg' %}" alt="women" width="300" height="200">
+            </div>    
+            <div class="tailor">
+                <img src="{% static 'images/tailorproject2.jpeg' %}" alt="women" width="300" height="200">
+
+            </div>
+       </div>
+        <!-- <div class="p-text">
+            <h4>Women's Project(Tailor)</h4>
+        </div>
+    <div class="tailor-row">
+        <div class="tailor">
+            <img src="images/tailorproject.jpeg" alt="" width="300" height="200">
+        </div>
+        <div class="tailor">
+            <img src="images/tailorproject1.jpeg" alt="" width="300" height="200">
+        </div>
+        <div class="tailor">
+            <img src="images/tailorproject2.jpeg" alt="" width="300" height="200">
+    
+        </div>
+    </div> -->
+
+
+
+    </section>
+    <!---footer-->
+    
+    <section class="color-f">
+        <section class="footer">
+            <h4>Contact Us</h4>
+            <p>Please do not hesitate to contact us; we would be happy to speak with you about improving human well being.
+            </p>
+            <div class="footer-social">
+                <ul>
+                    <li><a href="#"><i class="fa fa-facebook fa-3x"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter fa-3x"></i></a></li>
+                    <li><a href="#"><i class="fa fa-linkedin fa-3x"></i></a></li>
+                    <li><a href="#"><i class="fa fa-dribbble fa-3x"></i></a></li>
+                    <li><a href="#"><i class="fa fa-instagram fa-3x"></i></a></li>
+                    <li><a href="https://www.youtube.com/"><i class="fa fa-youtube fa-3x"></i></a></li>
+                </ul>
+            </div>
+            <!-- <div class="icons">
+                        <i class="fa fa-facebook fa-3x"></i>
+                        <i class="fa fa-twitter"></i>
+                        <i class="fa fa-instagram"></i>
+                        <i class="fa fa-linkedin"></i>
+                    </div> -->
+            <p id="creator">© Design and Developed By MMH</p>
+    
+        </section>
+    
+    </section>
+    </section>
+    <!-----JavaScript-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script>
+        var bar = document.getElementById("bar")
+        function showmenu() {
+            bar.style.right = "0";
+        }
+        function hidemenu() {
+            bar.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
